@@ -1,2 +1,3 @@
 #!/bin/bash
-echo (a..z)(a..z) | tr "" "\n" | grep -v "OO"
+printf '%s\n' {a..z}{a..z} | grep -Ev 'oo|bb|cc|dd|ee|ff|gg|hh|ii|jj|kk|ll|mm|nn|pp|qq|rr|ss|tt|uu|vv|ww|xx|yy|zz'
+
